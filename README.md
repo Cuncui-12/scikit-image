@@ -41,3 +41,8 @@ If you find this project useful, please cite:
 - step 2:创建虚拟环境：conda create -n scikit_envs python=3.8，进入代码文件夹：cd ~/scikit-image，打开终端并进入虚拟环境：conda activate scikit_envs
 - step 3:安装spin:pip stall spin,编译：spin build
 - 如果spin build过程中遇到没有src/skimage/restoration/unwrap_2d_ljmu.c等文件，去giyhub源码仓库看，大概率是克隆不完整，单独把这个文件下载到对应路径下。
+
+
+#一个解决最后提取的三维骨架为空的：
+- 问题：可能是与image的维度的奇偶数有关
+- https://github.com/scikit-image/scikit-image/issues/3757
