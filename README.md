@@ -43,6 +43,10 @@ If you find this project useful, please cite:
 - 如果spin build过程中遇到没有src/skimage/restoration/unwrap_2d_ljmu.c等文件，去giyhub源码仓库看，大概率是克隆不完整，单独把这个文件下载到对应路径下。
 - 注：编译之前，需要把skimage-image目录下的_skeletonize_lee_cy.pyx.in文件替换home/pc/scikit-image/src/skimage/morphology/_skeletonize_lee_cy.pyx.in这个文件。
 
+conda install meson-python ninja cython numpy compilers
+conda install pythran
+
+
 
 # 比较重要的几个代码文件：/home/pc/scikit-image/src/skimage/morphology目录下的:
 - __init__.py 里面包含了这个skimage.morphology导出的模块信息
