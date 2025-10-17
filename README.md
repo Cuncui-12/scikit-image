@@ -38,7 +38,7 @@ If you find this project useful, please cite:
 # 从源码进行编译scikit-image
 从github 克隆源码，然后建议虚拟环境进行python的编译（这里与C++不同）
 - step 1:git clone XXX
-- step 2:创建虚拟环境：conda create -n scikit_envs python=3.11，进入代码文件夹：cd ~/scikit-image，打开终端并进入虚拟环境：conda activate skimage_envs
+- step 2:创建虚拟环境：conda create -n skimage_envs python=3.11，进入代码文件夹：cd ~/scikit-image，打开终端并进入虚拟环境：conda activate skimage_envs
 - step 3:安装spin:pip stall spin,编译：spin install -v(每次修改了_skeletonize_lee_cy.pyx.in代码，编译会有4步，最后生成.so文件，代表修改和编译成功)
 - 如果spin build过程中遇到没有src/skimage/restoration/unwrap_2d_ljmu.c等文件，去giyhub源码仓库看，大概率是克隆不完整，单独把这个文件下载到对应路径下。
 - 注：编译之前，需要把skimage-image目录下的_skeletonize_lee_cy.pyx.in文件替换home/pc/scikit-image/src/skimage/morphology/_skeletonize_lee_cy.pyx.in这个文件。
