@@ -34,7 +34,7 @@ If you find this project useful, please cite:
 
 
 
-2025-10-16----------------------------以下为自己添加
+## 2025-10-16----------------------------以下为自己添加
 # 从源码进行编译scikit-image
 从github 克隆源码，然后建议虚拟环境进行python的编译（这里与C++不同）
 - step 1:git clone XXX
@@ -49,6 +49,6 @@ If you find this project useful, please cite:
 - _skeletonize.py 里面有几个主要的2D、3D骨架提取函数，细化函数，中轴提取函数
 - _skeletonize_lee_cy.pyx.in 最重要的文件，整个是用cython语言实现的用lee的方法提取的三维骨架函数，_compute_thin_image是主函数，里面包含了重要的判断简单点函数（连通性不变）、欧拉特性函数、端点、边界点函数.
 
-#一个解决最后提取的三维骨架为空的：
+# 一个解决最后提取的三维骨架为空的：
 - 问题：可能是与image的维度的奇偶数有关
 - https://github.com/scikit-image/scikit-image/issues/3757
